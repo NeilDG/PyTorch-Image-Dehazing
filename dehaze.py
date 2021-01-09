@@ -28,7 +28,7 @@ def dehaze_image(image_path):
 	dehaze_net.load_state_dict(torch.load('snapshots/dehazer.pth'))
 
 	clean_image = dehaze_net(data_hazy)
-	torchvision.utils.save_image(torch.cat((data_hazy, clean_image),0), "results/" + image_path.split("/")[-1])
+	torchvision.utils.save_image(torch.cat((data_hazy, clean_image),0), "results/" + image_path.split("\\")[1])
 	
 
 if __name__ == '__main__':
