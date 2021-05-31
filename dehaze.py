@@ -35,27 +35,36 @@ def dehaze_image(results_path, image_path):
 
 if __name__ == '__main__':
 
-	img_dir = "E:/Hazy Dataset Benchmark/O-HAZE/hazy/"
+	# img_dir = "E:/Hazy Dataset Benchmark/O-HAZE/hazy/"
+	# test_list = glob.glob(img_dir + "*.jpg")  # specify atmosphere intensityimg_dir = "D:/Datasets/OTS_BETA/haze/"
+	# results_path = "results/O-Haze/"
+	#
+	# for image in test_list:
+	# 	dehaze_image(results_path, image)
+	# 	print(image, "done!")
+
+	img_dir = "E:/Hazy Dataset Benchmark/I-HAZE/hazy/"
 	test_list = glob.glob(img_dir + "*.jpg")  # specify atmosphere intensityimg_dir = "D:/Datasets/OTS_BETA/haze/"
-	results_path = "results/O-Haze/"
+	results_path = "results/I-Haze/"
 
 	for image in test_list:
 		dehaze_image(results_path, image)
 		print(image, "done!")
 
-	img_dir = "D:/Datasets/OTS_BETA/haze/"
-	test_list = glob.glob(
-		img_dir + "*0.95_0.2.jpg")  # specify atmosphere intensityimg_dir = "D:/Datasets/OTS_BETA/haze/"
-	results_path = "results/OTS-Beta/"
+	#
+	# img_dir = "D:/Datasets/OTS_BETA/haze/"
+	# test_list = glob.glob(
+	# 	img_dir + "*0.95_0.2.jpg")  # specify atmosphere intensityimg_dir = "D:/Datasets/OTS_BETA/haze/"
+	# results_path = "results/OTS-Beta/"
+	#
+	# for image in test_list:
+	# 	dehaze_image(results_path, image)
+	# 	print(image, "done!")
 
-	for image in test_list:
-		dehaze_image(results_path, image)
-		print(image, "done!")
-
-	img_dir = "E:/Hazy Dataset Benchmark/RESIDE-Unannotated/"
-	test_list = glob.glob(img_dir + "*.jpg")  # specify atmosphere intensityimg_dir = "D:/Datasets/OTS_BETA/haze/"
-	results_path = "results/RESIDE-3/"
-
-	for image in test_list:
-		dehaze_image(results_path, image)
-		print(image, "done!")
+	# img_dir = "E:/Hazy Dataset Benchmark/RESIDE-Unannotated/"
+	# test_list = glob.glob(img_dir + "*.jpeg")  # specify atmosphere intensityimg_dir = "D:/Datasets/OTS_BETA/haze/"
+	# results_path = "results/RESIDE-3/"
+	#
+	# for image in test_list:
+	# 	dehaze_image(results_path, image)
+	# 	print(image, "done!")
